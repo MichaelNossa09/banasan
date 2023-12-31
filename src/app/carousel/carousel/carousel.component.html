@@ -1,0 +1,14 @@
+@if (images && images.length > 0) {
+    <div class="carousel-container">
+        @for (item of images; track $index) {
+            <img [src]="item.imageSrc" [alt]="item.imageAlt" [ngClass]="selectedIndex === $index ? 'image-active' : ''" class="fade">
+        }
+        @if (indicators) {
+            <div class="carousel-dot-container">
+                @for (item of images; track $index) {
+                    <span class="dot" [ngClass]="selectedIndex === $index? 'active': ''" (click)="selectImage($index)"></span>
+                }
+            </div>
+        }
+    </div>
+}

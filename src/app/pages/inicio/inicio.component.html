@@ -1,0 +1,220 @@
+<div class="content-home">
+    @if (lang == 'es') {
+        <div class="image-inicial">
+            <img src="../../../assets/inicio_1.jpg" alt="Puerto">
+            <p><i>¡Somos Banasan!</i></p>
+        </div>
+        <div class="nuestros-servicios" id="nuestros-servicios">
+            <h5>Nuestros Servicios</h5>
+            <p>Estos son algunos de los servicios que ofrecemos, aunque cada día estamos creciendo más!</p>
+    
+    
+            <section class="materiales-suministros" id="materiales-suministros">
+                <!--<img src="../../../assets/materiales/materiales_y_suministros.jpg" alt="Materiales y Suministros - Banasan" > -->
+                <div class="images">
+                    <app-carousel [images]="imagesMateriales" [autoSlide]="true" [slideInterval]="6000"></app-carousel>
+                </div>
+                <div class="infoMateriales">
+                    <h5>Materiales y Suministros</h5>
+                    <p>Disponemos para la venta de todos los insumos y materiales necesarios para la producción y exportación de banano. Nuestra infraestructura nos da la posibilidad de mantener los inventarios necesarios para asegurar el cumplimiento oportuno de los pedidos de nuestros clientes.</p>
+                </div>
+            </section>
+    
+            <section class="operaciones-logisticas" id="operaciones-logisticas">
+                <div class="infoOperaciones">
+                    <h5>Operaciones Logísticas en Puerto</h5>
+                    <p>Para asegurar un proceso logístico, eficiente, seguro y orientado a la conservación de la calidad de la fruta, ofrecemos el servicio completo de la operación portuaria llevada a cabo en las instalaciones del Puerto de Santa Marta, el cual se ha especializado y destacado por el manejo eficiente de carga refrigerada en contenedores.</p>
+                </div>
+                <div class="images">
+                    <app-carousel [images]="imagesOperaciones" [autoSlide]="true" [slideInterval]="6000"></app-carousel>
+                </div>
+            </section>
+    
+            <section class="transporte-frutas" id="transporte-frutas">
+                <div class="images">
+                    <app-carousel [images]="imagesTransporte" [autoSlide]="true" [slideInterval]="6000"></app-carousel>
+                </div>
+                <div class="infoTransporte">
+                    <h5>Transporte de Frutas e Insumos</h5>
+                    <p>Ofrecemos el servicio de transporte de fruta e insumos, apoyados en una flota de transporte especializada que incluye camiones, cabezotes y chasis, sistemas de seguimiento satelital, procesos efectivos de planificación y seguimiento, garantizando de esta manera las mejores condiciones de calidad, conservación, inocuidad y seguridad de la fruta.</p>
+                </div>
+            </section>
+    
+            <section class="sanidad-vegetal" id="sanidad-vegetal">
+                <div class="infoSanidad">
+                    <h5>Sanidad Vegetal</h5>
+                    <p>Prestamos el servicio de control de Sigatoka Negra, enfocando todos nuestros esfuerzos en contribuir con la calidad de la fruta y mejorar la eficiencia productiva de nuestros clientes.
+                        <br><br>
+                        Actualmente realizamos el control fitosanitario sobre cultivos orgánicos y convencionales, siendo nuestra área de cobertura la zona bananera del Magdalena y La Guajira.</p>
+                    </div>
+                    <div class="images">
+                        <app-carousel [images]="imagesSanidad" [autoSlide]="true" [slideInterval]="6000"></app-carousel>
+                    </div>
+            </section>
+    
+            <section class="nuestras-certificaciones" id="nuestras-certificaciones">
+                <div class="infoCertificaciones">
+                    <h5>Nuestras Certificaciones</h5>
+                    <p>Contamos con las más exigentes certificaciones sociales, ambientales y de buenas prácticas agrícolas a nivel mundial:</p>
+                    <div class="certificaciones"> 
+                        <img src="../../../assets/certificaciones/logo-global_gap.png"  alt="Certificación Gobal Gap">
+                        <img src="../../../assets/certificaciones/rainfores.jpg" alt="Certificación Rainforest">
+                        <img src="../../../assets/certificaciones/Farming.png" alt="Certificación Farming">
+                        <img src="../../../assets/certificaciones/sa8000.png"  alt="Certificación SA8000">
+                        <img src="../../../assets/certificaciones/Usda Organic.png"  alt="Certificación Usda">
+                        <img src="../../../assets/certificaciones/basc.png"  alt="Certificación BASC">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contáctenos" id="contáctenos">
+                <h5>Contáctenos</h5>
+                <div class="contact">
+                    <div class="infoContact">
+                        <form id="formulario-contacto">
+                            <div>
+                                <label for="nombres">Nombres</label>
+                                <input type="text" name="nombres" id="nombres" value="" required>
+                            </div>
+                            <div>
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" value="" required>
+                            </div>
+                            <div>
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" name="email" id="email" value="" required>
+                            </div>
+                            <div>
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" name="telefono" id="telefono" value="" required>
+                            </div>
+                            <div>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+        
+                        <div id="alerta" class="alerta"></div>
+                    </div>
+        
+                    <div class="ubicación">
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1697995408234!6m8!1m7!1sXJqYVlJH9jTzUwyIFRnnDQ!2m2!1d11.20178573405876!2d-74.1995405437589!3f293.2427493512303!4f-10.449219645849396!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    }@else {
+        <div class="image-inicial">
+            <img src="../../../assets/inicio_1.jpg" alt="Puerto">
+            <p><i>¡We are Banasan!</i></p>
+        </div>
+        <div class="nuestros-servicios" id="nuestros-servicios">
+            <h5>Our Services</h5>
+            <p>These are some of the services we offer, although we are growing every day!</p>
+    
+    
+            <section class="materiales-suministros" id="materiales-suministros">
+                <div class="images">
+                    <app-carousel [images]="imagesMateriales" [autoSlide]="true" [slideInterval]="2500"></app-carousel>
+                </div>
+                <div class="infoMateriales">
+                    <h5>Materials & Supplies</h5>
+                    <p>We have for sale all the inputs and materials necessary for the production and export of bananas. Our infrastructure allows us to maintain the necessary inventories to ensure the timely fulfillment of our customers' orders.</p>
+                </div>
+            </section>
+    
+            <section class="operaciones-logisticas" id="operaciones-logisticas">
+                <div class="infoOperaciones">
+                    <h5>Port Logistics Operations.</h5>
+                    <p>To ensure an efficient and safe logistic process, oriented to the preservation of the quality of the fruit, we offer the complete service of the port operation carried out in the facilities of the Port of Santa Marta, which has specialized and stood out for the efficient handling of refrigerated cargo in containers.</p>
+                </div>
+                <div class="images">
+                    <app-carousel [images]="imagesOperaciones" [autoSlide]="true" [slideInterval]="2500"></app-carousel>
+                </div>
+            </section>
+    
+            <section class="transporte-frutas" id="transporte-frutas">
+                <div class="images">
+                    <app-carousel [images]="imagesTransporte" [autoSlide]="true" [slideInterval]="2500"></app-carousel>
+                </div>
+                <div class="infoTransporte">
+                    <h5>Transport of Fruit and Supplies</h5>
+                    <p>We offer the service of transporting fruit and inputs, supported by a specialized transport fleet that includes trucks, trailers and chassis, satellite tracking systems, effective planning and monitoring processes, thus ensuring the best conditions of quality, conservation, safety and security of the fruit.</p>
+                </div>
+            </section>
+    
+            <section class="sanidad-vegetal" id="sanidad-vegetal">
+                <div class="infoSanidad">
+                    <h5>Phytosanitary Control</h5>
+                    <p>We provide the service of Black Sigatoka control, focusing all our efforts in contributing to the quality of the fruit and improving the productive efficiency of our customers.
+                        <br><br>
+                        We currently perform phytosanitary control on organic and conventional crops, being our area of coverage the banana zone of Magdalena and La Guajira.</p>
+                    </div>
+                    <div class="images">
+                        <app-carousel [images]="imagesSanidad" [autoSlide]="true" [slideInterval]="2500"></app-carousel>
+                    </div>
+            </section>
+    
+            <section class="nuestras-certificaciones" id="nuestras-certificaciones">
+                <div class="infoCertificaciones">
+                    <h5>Our Certifications</h5>
+                    <p>We have the most demanding social, environmental and good agricultural practices certifications worldwide:</p>
+                    <div class="certificaciones"> 
+                        <img src="../../../assets/certificaciones/logo-global_gap.png"  alt="Certificación Gobal Gap">
+                        <img src="../../../assets/certificaciones/rainfores.jpg" alt="Certificación Rainforest">
+                        <img src="../../../assets/certificaciones/Farming.png" alt="Certificación Farming">
+                        <img src="../../../assets/certificaciones/sa8000.png"  alt="Certificación SA8000">
+                        <img src="../../../assets/certificaciones/Usda Organic.png"  alt="Certificación Usda">
+                        <img src="../../../assets/certificaciones/basc.png"  alt="Certificación BASC">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contáctenos" id="contáctenos">
+                <h5>Contact Us</h5>
+                <div class="contact">
+                    <div class="infoContact">
+                        <form id="formulario-contacto">
+                            <div>
+                                <label for="nombres">Names</label>
+                                <input type="text" name="nombres" id="nombres" value="" required>
+                            </div>
+                            <div>
+                                <label for="apellidos">Last names</label>
+                                <input type="text" name="apellidos" id="apellidos" value="" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" value="" required>
+                            </div>
+                            <div>
+                                <label for="telefono">Phone</label>
+                                <input type="text" name="telefono" id="telefono" value="" required>
+                            </div>
+                            <div>
+                                <label for="mensaje">Message</label>
+                                <textarea name="mensaje" id="mensaje" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+        
+                        <div id="alerta" class="alerta"></div>
+                    </div>
+        
+                    <div class="ubicación">
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1697995408234!6m8!1m7!1sXJqYVlJH9jTzUwyIFRnnDQ!2m2!1d11.20178573405876!2d-74.1995405437589!3f293.2427493512303!4f-10.449219645849396!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    }
+</div>

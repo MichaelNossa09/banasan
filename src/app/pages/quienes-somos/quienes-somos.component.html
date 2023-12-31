@@ -1,0 +1,33 @@
+
+<div class="content-quienes-somos">
+    <!--<img src="../../../assets/quienes_somos_1.jpg" alt="Somos Banasan">-->
+    <div class="carrousel">
+        <app-carousel [images]="imagesAbout" [autoSlide]="true" [slideInterval]="3000"></app-carousel>
+    </div>
+
+    @if (lang == 'es') {
+        <h5>Quiénes Somos</h5>
+        <div class="iframe">
+            <p>Somos una Comercializadora Internacional de banano domiciliada en Santa Marta - Colombia con más de 10 años de experiencia en el mercado. Actualmente exportamos a Europa más de 10 millones de cajas al año que incluyen banano convencional, orgánico, Fairtrade de pequeños productores y orgánico Fairtrade.
+                <br><br>
+                Como complemento a la comercialización de banano, ofrecemos a nuestros productores un portafolio de productos y servicios que buscan contribuir con su eficiencia y rentabilidad, asegurando procesos productivos y logísticos efectivos.
+            </p>
+            <video width="100%" controls style="margin: 10px 0" poster="../../../assets/certificaciones/img_cabecera.jpg">
+                <source src="../../../assets/videos/Somos Familia Banasan.mp4" type="video/mp4">
+                Si no puedes visualizar el video, intenta con otro navegador.
+            </video>        
+        </div>
+    }@else {
+        <h5>About Us</h5>
+        <div class="iframe">
+            <p>We are an international banana trading company based in Santa Marta - Colombia with more than 10 years of experience in the market. We currently export more than 10 million boxes per year to Europe, including Conventional, Organic, Fairtrade bananas from small producers and Fairtrade Organic bananas.
+                <br><br>
+                As a complement to the commercialization of bananas, we offer our producers a portfolio of products and services that seek to contribute to their efficiency and profitability, ensuring effective production and logistics processes.
+            </p>
+            <video width="100%" controls style="margin: 10px 0" poster="../../../assets/certificaciones/img_cabecera.jpg">
+                <source src="../../../assets/videos/Somos Familia Banasan.mp4" type="video/mp4">
+                If you cannot see the video, try another browser.
+            </video>           
+        </div>
+    }
+</div>

@@ -1,0 +1,224 @@
+.container-footer{
+    margin: 0;
+    padding: 20px 0;  
+    display: flex;
+    max-width: 1200px;
+    background-color: #337ab7;
+    background-color: #000;
+}
+
+.container-footer .footer{
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer .first{
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container-footer .first .svg{
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.container-footer .first .svg svg{
+    font-size: 30px;
+    fill: rgb(251, 208, 56);
+}
+
+.container-footer .first .infoFirst{
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+.container-footer .first .infoFirst h5{
+    color: rgb(251, 208, 56);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container-footer .first .infoFirst p{
+    color: #f1f1f1c0;
+}
+
+.container-footer .second{
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 600px;
+    position: relative;
+}
+
+.container-footer .second .svg{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.container-footer .second .svg svg{
+    font-size: 30px;
+    fill: rgb(251, 208, 56);
+}
+
+.container-footer .second .infoSecond{
+    position: absolute;
+    left: 100px;
+    line-height: 30px;
+}
+
+.container-footer .second .infoSecond p{
+    color: #f1f1f1c0;
+}
+
+.container-footer .first .infoFirst p b{
+    color: #fff;
+    font-weight: 400;
+}
+
+.container-footer .second .infoSecond p b{
+    color: #fff;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1000px) {
+    .container-footer{
+        background-color: #337ab7;
+        background-color: #000;
+    }
+    .container-footer .footer{
+        width: 90%;
+    }
+    .container-footer .first .svg svg{
+        font-size: 24px;
+    }
+    .container-footer .first .infoFirst h5{
+        font-size:15px;
+    }
+    .container-footer .first .infoFirst p{
+        font-size: 15px;
+    }
+
+
+
+    .container-footer .second .svg svg{
+        font-size: 24px;
+    }
+    .container-footer .second .infoSecond{
+        line-height: 25px;
+    }
+    .container-footer .second .infoSecond p{
+        font-size: 15px;
+    }
+    .container-footer .first .infoFirst p b{
+        font-size: 15px;
+    }
+    .container-footer .second .infoSecond p b{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .container-footer{
+        display: flex;
+        flex-flow: column;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        height: initial;
+    }
+
+    .container-footer .footer{
+        flex-flow: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+        align-items: initial;
+        justify-content: initial;
+    }
+    
+    .container-footer .first{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border: none;
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3) ;
+    }
+    .container-footer .first .svg{
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+        width: 20%;
+        background-color: transparent;
+    }    
+    .container-footer .first .svg svg{
+        width: auto;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 40px;
+        margin: auto;
+        background-color: #fff;
+    }
+    .container-footer .first .infoFirst{
+        width: 80%;
+    }
+    .container-footer .first .infoFirst h5{
+        font-size: 15px;
+    }
+    .container-footer .first .infoFirst p{
+        font-size: 13px;
+    }
+    
+
+    .container-footer .footer .second{
+        position: inherit;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        border: none;
+        display: flex;
+    }
+    
+    .container-footer .footer .second .svg{
+        position: inherit;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    
+    .container-footer .second .svg svg{
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 40px;
+        background-color: #fff;
+    }
+    
+    .container-footer .second .infoSecond{
+        position: initial;
+        width: 70%;
+    }
+    
+    
+}

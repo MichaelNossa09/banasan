@@ -1,0 +1,251 @@
+.container{ 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 0 10px;
+}
+
+.container .logo{
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    margin: 0;
+}
+.container .logo img{
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.container .nav{
+    display: flex;
+    align-items: center;
+    width: 820px;
+    margin: 0;
+}
+.container .nav nav{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.container .nav nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.container .nav nav ul li{
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding-right: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container .nav nav ul li ul{
+    display: none;
+    position: absolute;
+    justify-content: initial;
+    align-items: initial;
+    flex-flow: column;
+    top: 20px;
+    padding: 0;
+    min-width: 200px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.container .nav nav ul li ul li{
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    position: initial;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+.container .nav nav ul li svg{
+    font-size: 20px;
+}
+.container .nav nav ul li ul li a{
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #337ab7;
+}
+.container .nav nav ul li ul li a:hover{
+    color: rgb(251, 208, 56);
+    transition: all .2s ease;
+}
+
+.container .nav nav ul li a:hover{
+    color: rgb(251, 208, 56);
+    transition: all .2s ease;
+}
+
+.container .nav nav ul li a:hover + ul,
+.container .nav nav ul li ul:hover{
+    display: flex;
+}
+
+.container .nav nav ul li:last-of-type{
+    border: none;
+    padding: 0;
+    cursor:pointer;
+    font-size: 22px;
+    fill: #337ab7;
+}
+
+.container .nav nav ul li ul li:last-of-type{
+    cursor: initial;
+}
+
+.container .nav nav ul li:last-of-type:hover{
+    fill: rgb(251, 208, 56);
+    transition: all .2s ease;
+}
+
+.container .nav nav ul li a{
+    display: flex;
+    justify-content: center;
+    color: #337ab7;
+}
+
+@media (max-width: 1100px) {
+
+    .container .nav{
+        width: 70%;
+    }
+    .container .nav nav ul li{
+        font-size: 12px;
+    }
+
+    .container .nav nav ul li ul li a{
+        font-size: 12px;
+    }
+    
+    .container .nav nav ul li ul{
+        top: 15px;
+        min-width: 200px;
+    }
+
+    .container .nav nav ul li svg{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 850px){
+
+.container{
+    display: flex;
+    flex-flow: column;  
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.container .nav{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.container .nav nav{
+    padding: 20px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container .nav nav ul{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 251, 234);
+}
+
+.container .nav nav ul li{
+    margin: 10px;
+    border: none;
+    padding: 0;
+    font-weight: 600;
+}
+
+.container .nav nav ul li ul{
+    top: 15px;
+    padding: 0;
+    min-width: 170px;
+    margin: 0;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container .nav nav ul li ul li{
+    margin: 0;
+    padding: 0;
+}
+.container .nav nav ul li svg{
+    font-size: 16px;
+}
+.container .nav nav ul li ul li a{
+    font-size: 10px;
+    margin: 5px 0;
+    padding: 5px;
+    font-weight: 400;
+    color: rgb(251, 208, 56);
+}
+.container .nav nav ul li ul li a:hover{
+    color: #337ab7;
+    transition: all .2s ease;
+}
+
+.container .nav nav ul li a:hover{
+    color: rgb(251, 208, 56);
+    transition: all .2s ease;
+}
+
+.container .nav nav ul li a:active + ul,
+.container .nav nav ul li ul:hover{
+    display: flex;
+}
+
+.container .nav nav ul li:last-of-type{
+    border: none;
+    padding: 0;
+    cursor:pointer;
+    font-size: 22px;
+    fill: #337ab7;
+}
+
+.container .nav nav ul li .items-banasan, .container .nav nav ul li .items-servicios{
+    display: none;
+}
+
+.container .nav nav ul li .items-banasan.show, .container .nav nav ul li .items-servicios.show{
+    display:flex;
+}
+
+}

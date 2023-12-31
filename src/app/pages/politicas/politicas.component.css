@@ -1,0 +1,98 @@
+.content-políticas{
+    display: flex;
+    flex-flow: column;
+    background-color: #ffff;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.content-políticas img{
+    padding: 10px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.content-políticas h5{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #337ab7;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.content-políticas .politica{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.content-políticas .politica .politica-parte-superior{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 50px;  
+    padding: 0 10px;  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+
+.content-políticas .politica .politica-parte-superior h4{
+    display: flex;
+    margin: 0;
+    float: right;
+    color: #337ab7;
+}
+
+.content-políticas .politica .politica-parte-superior svg{
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+    fill: rgb(251, 208, 56);
+    font-size: 18px;
+}
+
+.content-políticas .politica .politica-parte-superior svg:hover{
+    font-size: 20px;
+    transition: all .2s ease;
+}
+
+.content-políticas .politica .politica-texto{
+    max-height: 0;
+    overflow: hidden;
+    line-height: 22px;
+    background-color: rgba(255, 251, 234, 0.3);
+    transition: max-height 0.2s ease-out;
+}
+.content-políticas .politica .politica-texto p{
+    display: block;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content-políticas .politica .politica-texto.show{
+    max-height: 500px;  
+    overflow: auto;
+}
+
+
+@media (max-width: 800px) {
+
+    .content-políticas h5{
+        font-size: 18px;
+    }
+    .content-políticas .politica .politica-parte-superior h4{
+        font-size: 14px;
+    }
+}

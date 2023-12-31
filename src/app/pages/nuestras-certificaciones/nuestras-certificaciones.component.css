@@ -1,0 +1,116 @@
+.content-nuestras-certificaciones{
+    display: flex;
+    flex-flow: column;
+    padding-top: 20px;
+}
+
+.content-nuestras-certificaciones img{
+    border-radius: 15px;
+    width: 90%;
+}
+
+.content-nuestras-certificaciones .certificaciones{
+    display: flex;
+    flex-flow: column;
+    background-color: #ffff;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.content-nuestras-certificaciones .certificaciones h5{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #337ab7;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+.content-nuestras-certificaciones .certificaciones p{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.content-nuestras-certificaciones .certificaciones .imagesCertificaciones{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 90%;
+}
+
+.content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image img{
+    width: 150px;
+    height: 150px;
+    margin: 5px 0;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image h6{
+    font-size: 16px;
+    color: #337ab7;
+}
+
+.content-nuestras-certificaciones .certificaciones .imagesCertificaciones img:hover{
+    transform: translateY(-10px);
+    transition: all .2s ease;
+}
+
+@media (max-width: 800px) {
+    .content-nuestras-certificaciones .certificaciones h5{
+        font-size: 16px;
+    }
+    .content-nuestras-certificaciones .certificaciones p{
+        font-size: 14px;
+    }
+    .content-nuestras-certificaciones .certificaciones .imagesCertificaciones{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image{
+        margin: 10px auto;
+        padding: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 100px;
+    }
+    .content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image img{
+        margin: 0;
+        width: 80%;
+        height: 80%;
+    }
+    .content-nuestras-certificaciones .certificaciones .imagesCertificaciones .image h6{
+        height: 20%;
+        margin-top: 10px;
+        display: flex;
+        font-size: 13px;
+        justify-content: center;
+        width: 100%;
+    }
+}
